@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.0.5.2 (Linux)">
+	<META NAME="AUTHOR" CONTENT="Jonathan Barry">
+	<META NAME="CREATED" CONTENT="20150217;20110000">
+	<META NAME="CHANGEDBY" CONTENT="Jonathan Barry">
+	<META NAME="CHANGED" CONTENT="20150221;19160000">
+	<META NAME="AppVersion" CONTENT="14.0000">
+	<META NAME="Company" CONTENT="MSU">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 8.5in 11in; margin-left: 1.25in; margin-right: 1.25in; margin-top: 1in; margin-bottom: 1in }
+		P { margin-bottom: 0.08in; direction: ltr; widows: 2; orphans: 2 }
+		A:link { color: #0000ff; so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" LINK="#0000ff" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-bottom: 0.21in; border-top: none; border-bottom: 1.00pt solid #4f81bd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.06in; padding-left: 0in; padding-right: 0in">
+<FONT COLOR="#17365d"><FONT FACE="Calibri, serif"><FONT SIZE=6 STYLE="font-size: 26pt"><FONT SIZE=6 STYLE="font-size: 28pt"><B>StackExchange
+and How Their Data Stacks Up</B></FONT></FONT></FONT></FONT></P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><A NAME="_GoBack"></A>
+<FONT FACE="Times New Roman, serif"><A HREF="http://stackexchange.com/">StackExchange</A>
+is a network of over 130 Q&amp;A communities including Stack
+Overflow, the preeminent site for programmers to find, ask, and
+answer questions about software development.&nbsp; Stack Overflow is
+the most popular with serving over 26 million programmers per month. 
+StackExchange has a network of sites that rank 54</FONT><SUP><FONT FACE="Times New Roman, serif">th</FONT></SUP><FONT FACE="Times New Roman, serif">
+in the world.  Their large ecosystem has 110 sites and is growing at
+a rate of 3 or 4 a month; 4 million users; 40 million answers; and
+560 million page-views a month.  To be able to handle that load, it
+requires a lot of hardware and strategic handling of that data. </FONT><IMG SRC="i_156078ce60f018f4_html_22f3d0c5.png" NAME="Picture 1" ALIGN=LEFT HSPACE=12 WIDTH=478 HEIGHT=294 BORDER=0><SPAN DIR="LTR" STYLE="float: left; width: 4.98in; height: 0.29in; border: none; padding: 0in; background: #ffffff">
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.14in"><FONT COLOR="#4f81bd"><FONT SIZE=2 STYLE="font-size: 9pt"><B>Figure
+	1 Stack Exchange Sites</B></FONT></FONT></P>
+</SPAN>
+</P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><FONT FACE="Times New Roman, serif">So
+how is it done? With just 25 servers, yes only 25 servers. Stack
+Overflow still uses a scale-up strategy.  They are holding out
+against using the cloud since it still makes financial sense to host
+their data on their own servers. How are the servers run? 2 TB of SQL
+data all stored on SSDs, Each web server has 2x 320GB SSDs in a RAID
+1, and each ElasticSearch box has 300 GB also using SSDs. They also
+primarily use SSDs to increase speed and efficiency.  Intel 330 as
+the default (web tier, etc.) Intel 520 for mid tier writes like
+Elastic Search and Intel 710 &amp; S3700 for the database tier. S3700
+is simply the successor to the high endurance 710 series. 
+StackExchange uses databases to store this wide array of data.  The
+database of choice is the MS SQL Server.  StackExchange works because
+it is kept simple.  Coding is kept to a minimum and security is high
+level as well.  On the StackExchange website you can report any
+<A HREF="http://stackexchange.com/about/security">security
+vulnerabilities</A>. A couple years ago, a database administrator for
+StackExchange posted about what it takes to run Stack Overflow. To
+get a more personal look into StackExchange check out that article
+<A HREF="http://nickcraver.com/blog/2013/11/22/what-it-takes-to-run-stack-overflow/">here</A>.
+To get more extensive data and behind the scenes of StackExchange you
+can check out this <A HREF="http://highscalability.com/blog/2014/7/21/stackoverflow-update-560m-pageviews-a-month-25-servers-and-i.html">blog</A>.</FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Times New Roman, serif"><I>Written
+by Jonathan Barry</I></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Times New Roman, serif"><I>24
+February 2015</I></FONT></P>
+</BODY>
+</HTML>
