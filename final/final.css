@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* Jonathan Barry's CSS Document. 
+Color list:
+Light Green: #A3D9B0
+Green: #93BF9E
+Tan: #F2F0D5
+Brown: #8C8474
+Dark Brown: #40362E
+Color scheme:Chuck Howard Poster
+*/
+
+body {
+	width: 761px;
+	margin: 1.5em auto; /* this + a defined width, centers the body content */
+	border-color: #40362E;
+	border-style: solid;
+	border-width: 10px;
+	background-image: url(326255_8797.jpg);
+	background-color: #F2F0D5;
+	width: 900px;
+	
+}
+
+body p {
+	color: #fff;
+}
+body ol {
+color: #fff;
+text-decoration: bold;
+
+}
+
+body ul {
+	color: #fff;
+
+}
+
+
+html {
+	background-image: url(1261134_67514289.jpg);
+	background-color:#cccccc;
+	<font face="Trebuchet MS, Arial, Helvetica, sans-serif"></font>
+}
+
+img.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.photomove {
+	float: right;
+
+}
+
+.puppymove {
+	float: inherit;
+}
+
+
+h1 {
+	text-align: center;
+	background-color: #A3D9B0;
+	color: 40362E;
+}
+
+h2 {
+	padding: 5px;
+	color: #40362E;
+	background-color:  #93BF9E;
+	
+}
+
+h3 {
+	color: #8C8474;
+	background-color:#40362E;
+	
+}
+
+h4 {
+	color: #fff;
+	
+	
+}
+
+img {
+	border-color: #8C8474;
+	border-style: solid;
+	border-width: 5px;
+	align: middle;
+}
+
+
+a {
+	font-weight: bold;
+	color: #00FF00;
+	text-decoration: none;
+}
+
+#content {
+	padding: 15px;
+}
+
+#footer{
+	padding: 15px;
+	text-align:left;
+	background-color: #40362E;
+	
+}
+
+.valid {
+	float:right;
+	border:medium;
+	
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #93BF9E;
+}
+
+a:visited {
+	color: #FF0;
+}
+
+a:active {
+	background-color: #000000;
+}
+.moveimage {
+	display: block;
+	width: auto;
+	margin-right: auto;
+	margin-left:auto;
+}
+
+#nav {
+	list-style-type: none;
+	background-color: #000;
+	/* [disabled]border-style:solid; */
+	text-align: center;
+	padding: 5px;
+}
+
+#nav li{
+	display: inline;
+}
+
+#nav a {
+	color: #C90;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-left: 3px solid #0CC;
+}
+#firstnav a{
+	border-left: none;
+}
+
+#nav a:hover{
+	text-decoration: none;
+	color:#CCFFFF;
+}
+#footer p {
+	font-size: 13px;
+}
